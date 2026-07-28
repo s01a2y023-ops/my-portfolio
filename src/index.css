@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+
+@layer components {
+  /* 定义一个通用的呼吸边框类 */
+  .hover-breathing:hover {
+    border: 2px solid transparent;
+    animation: pulse-border 2s infinite ease-in-out;
+  }
+}
+
+@keyframes pulse-border {
+  0% { border-color: #3b4ef6; }   /* 蓝色 */
+  33% { border-color: #ec4861; }  /* 粉色 */
+  66% { border-color: #d13bf6; }
+  100% { border-color: #3b4ef6; } /* 回到蓝色 */
+}
+
